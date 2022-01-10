@@ -297,7 +297,7 @@ h1 {
     }
 
     #emailbox-mini {
-        display: show;
+        display: block;
         width: 200px;
         padding: 1%;
         text-align: center;

@@ -16,8 +16,8 @@
 
     <nav id="main-nav">
         <ul id="navbar">
-            <li>SERVICES</li>
-            <li>CONTACT ME</li>
+            <!-- <li>SERVICES</li> -->
+            <li><a href="#contact" id="contactme">CONTACT ME</a></li>
         </ul>
     </nav>
 
@@ -35,24 +35,30 @@
     <h2>SERVICES</h2>
     <div id="greenarea">
         <div id=listed-items>
-            <p class="service-list">BOOKKEEPING</p>
-            <p class="service-list">AP/AR</p>
-            <p class="service-list">BANK RECONCILIATION</p>
-            <p class="service-list">CONSULTATION</p>
-            <p class="service-list">STATEMENTS</p>
-            <p class="service-list">BILLING</p>
+            <div id="service-description">
+                <p id="offer-statement">I offer a variety of services that can be tailored to your individual needs. Click on a service to see further details. </p>
+            </div>
+            <div id="listed-services">
+                <p class="service-list" id="bookkeeping">BOOKKEEPING</p>
+                <p class="service-list" id="ap-ar">AP/AR</p>
+                <p class="service-list" id="reconcil">BANK RECONCILIATION</p>
+                <p class="service-list" id="consult">CONSULTATION</p>
+                <p class="service-list" id="statements">STATEMENTS</p>
+                <p class="service-list" id="billing">BILLING</p>
+            </div>
         </div>
     </div>
     
     <div id="form-block">
 
-        <h2>LET'S TALK ABOUT IT</h2>
+        <h2 id="contact">LET'S TALK ABOUT IT</h2>
 
-        <form>
+        <form >
             <input type="text" id="emailbox" class="form-entries" name="emailbox" placeholder="ENTER YOUR EMAIL"><br>
             <textarea id="textbox"class="form-entries" rows="8" cols="50" placeholder="WHAT SERVICES ARE YOU INTERESTED IN?"></textarea>
             <!-- <button id="button">SEND</button> -->
         </form>
+        <button id="button">SEND</button>
 
     </div>
 
@@ -61,19 +67,19 @@
 <div id="bottom-section">
     <div id="coldiv">
         <div id="mapdiv" class="bottomdivs">
-            <p>insert a map here maybe</p>
+            <img src="images/googleMap.jpeg" alt="google map of bay area">
         </div>
         <div id="baydiv" class="bottomdivs">
-            <h3>SERVICING THE EAST &<br>NORTH BAY AREA</h3>
-            <p>certified</p>
-            <p>licensed</p>
+            <br><h3>SERVICING THE EAST &<br>NORTH BAY AREA</h3>
+            <p>Certified & Licensed</p>
+            <!-- <p>licensed</p> -->
         </div>
     </div><br>
 
     <div id="footerinfo">
         <p id="llc">DANI'S TAXES LLC 2022</p>
+   
     </div>
-</div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+
+
+
+
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0 auto;
@@ -26,6 +31,11 @@ li {
     display: inline;
     float: right;
     margin: 0 2%;
+}
+
+#contactme {
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -63,11 +73,16 @@ h1 {
     background-color: #2ebe2e;
     height: 400px;
     width:100%;
-    padding-top: 35px;
+    /* padding-top: 100px; */
 }
 
+/* #service-description-mini {
+    display: none;
+} */
+
 #listed-items {
-    width:50%;
+    /* background-color: aquamarine; */
+    width:80%;
     margin: auto;
     /* background-color: darkmagenta; */
     color: #fff;
@@ -75,8 +90,28 @@ h1 {
     grid-template-columns: 1fr 1fr;
 }
 
-.service-list {
+#listed-services {
+    padding-top: 25px;
+}
+
+.service-list {   
     font-size: 25px;
+}
+
+.service-list:hover {   
+    color: #346334;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#service-description {
+ 
+    padding-top: 75px;
+}
+
+#offer-statement {
+    font-size: 25px;
+    color: #000;
 }
 
 #form-block {
@@ -101,11 +136,32 @@ h1 {
     font-size: 25px;
 }
 
+#button {
+    background-color: #2ebe2e;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 1%;
+    width: 100px;
+}
+
+#button:hover {
+    color: #fff;
+}
+
+#button:active {
+    background: #0a570a;
+    transform: scale(.9);
+}
+
 #bottom-section {
     margin-top: 10%;
     height: 300px;
     background-color: #346334;
     position: relative;
+    width: 100%;
 }
 
 
@@ -120,18 +176,74 @@ h1 {
     color: #fff;
 }
 
+#mapdiv {
+    margin-top: 50px;
+}
+
 #baydiv {
+    margin-top: 25px;
     font-size: 20px;
 }
 
 #footerinfo {
     position: absolute;
     bottom:0;
-    right:0;
+    right:0; 
     color: #8eaa8e;
-    width: 100px;
+    width: 200px;
+} 
+
+/* #llc {
+    margin-right: 20px;
+} */
+
+
+
+@media only screen and (max-width: 891px){
+    /* body {
+        background-color: aquamarine;
+    } */
+    
+    #greenarea {
+        height: 500px;
+    }
 }
 
-#llc {
-    margin-right: 20px;
+@media only screen and (max-width: 700px){
+    /* body {
+        background-color:#aa809c;
+    } */
+
+    #name-info{
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+
+    #contactme {
+        font-size: larger;
+    }
+
+    #greenarea {
+        height: 800px;
+    }
+
+    /* #service-description-mini{
+        display: block;
+    }
+
+    #service-description {
+        display: none;
+    } */
+
+
+
+    #listed-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    
 }

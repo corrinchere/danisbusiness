@@ -12,6 +12,8 @@ body {
 #main-content {
     width: 90%;
     margin: auto;
+    background-color: #2ebe2e;
+    box-shadow: 5px 10px 15px #346334;
 }
 
 #main-nav {

@@ -301,6 +301,7 @@ h1 {
         width: 200px;
         padding: 1%;
         text-align: center;
+        margin: auto;
     }
 
     #button {

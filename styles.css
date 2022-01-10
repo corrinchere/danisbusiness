@@ -105,8 +105,12 @@ h1 {
 }
 
 #service-description {
- 
-    padding-top: 75px;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+    padding: 5%;
+    margin-top: 50px;
 }
 
 #offer-statement {
@@ -156,6 +160,13 @@ h1 {
     transform: scale(.9);
 }
 
+#emailboxmini, #textbox-mini, #emailbox-midsize, #textbox-midsize {
+    display: none;
+
+}
+
+
+
 #bottom-section {
     margin-top: 10%;
     height: 300px;
@@ -193,6 +204,10 @@ h1 {
     width: 200px;
 } 
 
+#emailbox-mini {
+    display: none;
+}
+
 /* #llc {
     margin-right: 20px;
 } */
@@ -202,17 +217,40 @@ h1 {
 @media only screen and (max-width: 891px){
     /* body {
         background-color: aquamarine;
-    } */
+    }  */
     
     #greenarea {
         height: 500px;
     }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
+    /* body {
+        background-color: rgb(83, 61, 184);
+    }  */
+    
+    #greenarea {
+        height: 500px;
+    }
+
+    #textbox {
+        display: none;
+    }
+
+    #textbox-midsize {
+        display:block;
+        margin: auto;
+    }
+
+    #mapimage {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 460px){
     /* body {
         background-color:#aa809c;
-    } */
+    }  */
 
     #name-info{
         text-align: center;
@@ -243,6 +281,97 @@ h1 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    #emailbox, #textbox {
+        display:none;
+    }
+
+    #emailbox {
+        display: none;
+    }
+
+    
+    #textbox-mini {
+        display: block;
+        margin: auto;
+    }
+
+    #emailbox-mini {
+        display: show;
+        width: 200px;
+        padding: 1%;
+        text-align: center;
+    }
+
+    #button {
+        margin-top: 2%;
+    }
+
+    #button-mini {
+        display: block;
+    }
+
+    #button-mini {
+        background-color: #2ebe2e;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        padding: 1%;
+        width: 100px;
+    }
+    
+    #button-mini:hover {
+        color: #fff;
+    } 
+
+    #bottom-section {
+        margin-top: 10%;
+        background-color: #346334;
+        height: 600px;
+        width: 100%;
+    }
+    
+    
+    #coldiv {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #mapimage {
+        width: 250px;
+    }
+
+    #emailbox-midsize, #textbox-midsize {
+        display: none;
+    
+    }
+    
+    /* .bottomdivs {
+        text-align: center;
+        color: #fff;
+    }
+    
+    #mapdiv {
+        margin-top: 50px;
+    }
+    
+    #baydiv {
+        margin-top: 25px;
+        font-size: 20px;
+    } */
+    
+    /* #footerinfo {
+        /* position: absolute;
+        bottom:0;
+        right:0;  
+        color: #8eaa8e;
+        width: 200px;
+    } */
+
+
 
 
     
